@@ -1,0 +1,19 @@
+if [ "$#" -ne 4 ]; then
+  echo "Usage: $0 filename name email taskname"
+  exit 1
+fi
+
+filename=$1
+name=$2
+email=$3
+taskname=$4
+
+echo -e "$name\t$email\t$taskname" >> "$filename"
+chmod +x addtask.sh
+
+
+
+
+
+
+
