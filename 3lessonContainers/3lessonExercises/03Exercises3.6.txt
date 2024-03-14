@@ -1,0 +1,219 @@
+cargo-fuzz       gimmecert        kubeshark        neosync          pass-import      rawdog           ssh3             vulkan-profiles
+dhall-toml       glasskube        lsusb-laniksj    netaddr          phodav           robin-map        sshpass
+==> New Casks
+acreom                      dnsmonitor                  jamie                       notesollama                 stashpad
+amneziavpn                  dosbox-staging              jordanbaird-ice             overlayed                   youlean-loudness-meter
+apidog-europe               endless-sky-high-dpi        kit                         segger-ozone
+deelay                      fixkey                      motion                      spatial
+
+You have 24 outdated formulae and 1 outdated cask installed.
+
+Warning: Treating docker as a formula. For the cask, use homebrew/cask/docker
+==> Downloading https://ghcr.io/v2/homebrew/core/docker/manifests/25.0.3
+##################################################################################################################################### 100.0%
+==> Fetching dependencies for docker: docker-completion
+==> Downloading https://ghcr.io/v2/homebrew/core/docker-completion/manifests/25.0.3
+##################################################################################################################################### 100.0%
+==> Fetching docker-completion
+==> Downloading https://ghcr.io/v2/homebrew/core/docker-completion/blobs/sha256:881989728fab8854f6494d63c76e428020a880f08284b9d851406fb84131
+##################################################################################################################################### 100.0%
+==> Fetching docker
+==> Downloading https://ghcr.io/v2/homebrew/core/docker/blobs/sha256:d74c65d2f2fc92a35c544e32d30955f542d3f1a1aa952c7fc4b2b770134deecc
+##################################################################################################################################### 100.0%
+==> Installing dependencies for docker: docker-completion
+==> Installing docker dependency: docker-completion
+==> Downloading https://ghcr.io/v2/homebrew/core/docker-completion/manifests/25.0.3
+Already downloaded: /Users/jakubkuka/Library/Caches/Homebrew/downloads/179e90ee4000b2b9b466638c2956ed13f780fa81cf3661d1e8d2a1a8426578fa--docker-completion-25.0.3.bottle_manifest.json
+==> Pouring docker-completion--25.0.3.all.bottle.tar.gz
+🍺  /opt/homebrew/Cellar/docker-completion/25.0.3: 9 files, 338.6KB
+==> Installing docker
+==> Pouring docker--25.0.3.arm64_sonoma.bottle.tar.gz
+🍺  /opt/homebrew/Cellar/docker/25.0.3: 13 files, 25.6MB
+==> Running `brew cleanup docker`...
+Disable this behaviour by setting HOMEBREW_NO_INSTALL_CLEANUP.
+Hide these hints with HOMEBREW_NO_ENV_HINTS (see `man brew`).
+jakubkuka@Jakubs-MacBook-Pro-2 Desktop % docker --version 
+Docker version 25.0.3, build 4debf411d1
+jakubkuka@Jakubs-MacBook-Pro-2 Desktop % clear
+
+jakubkuka@Jakubs-MacBook-Pro-2 Desktop % docker run --rm hello-world
+Unable to find image 'hello-world:latest' locally
+latest: Pulling from library/hello-world
+478afc919002: Pull complete 
+Digest: sha256:d000bc569937abbe195e20322a0bde6b2922d805332fd6d8a68b19f524b7d21d
+Status: Downloaded newer image for hello-world:latest
+
+Hello from Docker!
+This message shows that your installation appears to be working correctly.
+
+To generate this message, Docker took the following steps:
+ 1. The Docker client contacted the Docker daemon.
+ 2. The Docker daemon pulled the "hello-world" image from the Docker Hub.
+    (arm64v8)
+ 3. The Docker daemon created a new container from that image which runs the
+    executable that produces the output you are currently reading.
+ 4. The Docker daemon streamed that output to the Docker client, which sent it
+    to your terminal.
+
+To try something more ambitious, you can run an Ubuntu container with:
+ $ docker run -it ubuntu bash
+
+Share images, automate workflows, and more with a free Docker ID:
+ https://hub.docker.com/
+
+For more examples and ideas, visit:
+ https://docs.docker.com/get-started/
+
+jakubkuka@Jakubs-MacBook-Pro-2 Desktop % docker pull ubuntu 
+Using default tag: latest
+latest: Pulling from library/ubuntu
+a4a2c7a57ed8: Pull complete 
+Digest: sha256:f9d633ff6640178c2d0525017174a688e2c1aef28f0a0130b26bd5554491f0da
+Status: Downloaded newer image for ubuntu:latest
+docker.io/library/ubuntu:latest
+jakubkuka@Jakubs-MacBook-Pro-2 Desktop % docker run --name scripttest -it ubuntu 
+root@7adff42e2d2e:/# ls -al
+total 56
+drwxr-xr-x   1 root root 4096 Feb 29 19:52 .
+drwxr-xr-x   1 root root 4096 Feb 29 19:52 ..
+-rwxr-xr-x   1 root root    0 Feb 29 19:52 .dockerenv
+lrwxrwxrwx   1 root root    7 Feb 12 14:04 bin -> usr/bin
+drwxr-xr-x   2 root root 4096 Apr 18  2022 boot
+drwxr-xr-x   5 root root  360 Feb 29 19:52 dev
+drwxr-xr-x   1 root root 4096 Feb 29 19:52 etc
+drwxr-xr-x   2 root root 4096 Apr 18  2022 home
+lrwxrwxrwx   1 root root    7 Feb 12 14:04 lib -> usr/lib
+drwxr-xr-x   2 root root 4096 Feb 12 14:04 media
+drwxr-xr-x   2 root root 4096 Feb 12 14:04 mnt
+drwxr-xr-x   2 root root 4096 Feb 12 14:04 opt
+dr-xr-xr-x 220 root root    0 Feb 29 19:52 proc
+drwx------   2 root root 4096 Feb 12 14:08 root
+drwxr-xr-x   5 root root 4096 Feb 12 14:08 run
+lrwxrwxrwx   1 root root    8 Feb 12 14:04 sbin -> usr/sbin
+drwxr-xr-x   2 root root 4096 Feb 12 14:04 srv
+dr-xr-xr-x  11 root root    0 Feb 29 19:52 sys
+drwxrwxrwt   2 root root 4096 Feb 12 14:08 tmp
+drwxr-xr-x  11 root root 4096 Feb 12 14:04 usr
+drwxr-xr-x  11 root root 4096 Feb 12 14:08 var
+root@7adff42e2d2e:/# pwd
+/
+root@7adff42e2d2e:/# exit
+exit
+jakubkuka@Jakubs-MacBook-Pro-2 Desktop % docker start -i scripttest
+root@7adff42e2d2e:/# cd /tmp
+root@7adff42e2d2e:/tmp# echo "howdy partner"> myfile.txt
+root@7adff42e2d2e:/tmp# echo "howdy partner" > myfile.txt
+root@7adff42e2d2e:/tmp# ls -al 
+total 12
+drwxrwxrwt 1 root root 4096 Feb 29 19:58 .
+drwxr-xr-x 1 root root 4096 Feb 29 19:52 ..
+-rw-r--r-- 1 root root   14 Feb 29 19:58 myfile.txt
+root@7adff42e2d2e:/tmp# cat myfile.txt
+howdy partner
+root@7adff42e2d2e:/tmp# 
+exit
+jakubkuka@Jakubs-MacBook-Pro-2 Desktop % docker start -i scripttest
+root@7adff42e2d2e:/# cd /tmp 
+root@7adff42e2d2e:/tmp# micro myfile.txt
+bash: micro: command not found
+root@7adff42e2d2e:/tmp# nano myfile.txt
+bash: nano: command not found
+root@7adff42e2d2e:/tmp# cd .. 
+root@7adff42e2d2e:/# apt-get update 
+Get:1 http://ports.ubuntu.com/ubuntu-ports jammy InRelease [270 kB]
+Get:2 http://ports.ubuntu.com/ubuntu-ports jammy-updates InRelease [119 kB]
+Get:3 http://ports.ubuntu.com/ubuntu-ports jammy-backports InRelease [109 kB]
+Get:4 http://ports.ubuntu.com/ubuntu-ports jammy-security InRelease [110 kB]
+Get:5 http://ports.ubuntu.com/ubuntu-ports jammy/universe arm64 Packages [17.2 MB]
+42% [5 Packages 9586 kB/17.2 MB 56%]                                                                                                   790 kB/s 22sa47% [5 Packages 11.5 MB/17.2 MB 67%]                                                                                                   790 kB/s 19sg53% [5 Packages 13.7 MB/17.2 MB 79%]                                                                                                   1516 kB/s 8si55% [5 Packages 14.3 MB/17.2 MB 83%]                                                                                                   1516 kB/s 8sl60% [5 Packages 15.8 MB/17.2 MB 92%]                                                                                                   1516 kB/s 7scGet:6 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 Packages [1758 kB]                                                                     
+Get:7 http://ports.ubuntu.com/ubuntu-ports jammy/restricted arm64 Packages [24.2 kB]                                                               
+Get:8 http://ports.ubuntu.com/ubuntu-ports jammy/multiverse arm64 Packages [224 kB]                                                                
+Get:9 http://ports.ubuntu.com/ubuntu-ports jammy-updates/multiverse arm64 Packages [28.4 kB]                                                       
+Get:10 http://ports.ubuntu.com/ubuntu-ports jammy-updates/universe arm64 Packages [1269 kB]                                                        
+Get:11 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 Packages [1540 kB]                                                            
+Get:12 http://ports.ubuntu.com/ubuntu-ports jammy-updates/restricted arm64 Packages [1320 kB]                                                      
+Get:13 http://ports.ubuntu.com/ubuntu-ports jammy-backports/universe arm64 Packages [26.2 kB]                                                      
+Get:14 http://ports.ubuntu.com/ubuntu-ports jammy-backports/main arm64 Packages [49.9 kB]                                                          
+Get:15 http://ports.ubuntu.com/ubuntu-ports jammy-security/restricted arm64 Packages [1301 kB]                                                     
+Get:16 http://ports.ubuntu.com/ubuntu-ports jammy-security/main arm64 Packages [1270 kB]                                                           
+Get:17 http://ports.ubuntu.com/ubuntu-ports jammy-security/multiverse arm64 Packages [24.0 kB]                                                     
+Get:18 http://ports.ubuntu.com/ubuntu-ports jammy-security/universe arm64 Packages [1002 kB]                                                       
+Fetched 27.7 MB in 22s (1275 kB/s)                                                                                                                 
+Reading package lists... Done
+root@7adff42e2d2e:/# apt-get install micro
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+The following additional packages will be installed:
+  libbsd0 libice6 libmd0 libsm6 libx11-6 libx11-data libxau6 libxcb1 libxdmcp6 libxext6 libxmu6 libxmuu1 libxt6 x11-common xauth xclip
+The following NEW packages will be installed:
+  libbsd0 libice6 libmd0 libsm6 libx11-6 libx11-data libxau6 libxcb1 libxdmcp6 libxext6 libxmu6 libxmuu1 libxt6 micro x11-common xauth xclip
+0 upgraded, 17 newly installed, 0 to remove and 4 not upgraded.
+Need to get 5040 kB of archives.
+After this operation, 16.4 MB of additional disk space will be used.
+Do you want to continue? [Y/n] cd /temp
+Abort.
+root@7adff42e2d2e:/# y
+bash: y: command not found
+root@7adff42e2d2e:/# cd /tmp
+root@7adff42e2d2e:/tmp# micro myfile.txt
+bash: micro: command not found
+root@7adff42e2d2e:/tmp# y
+bash: y: command not found
+root@7adff42e2d2e:/tmp# docker restart scripttest
+bash: docker: command not found
+root@7adff42e2d2e:/tmp# cd .. 
+root@7adff42e2d2e:/# docker restart stripttest
+bash: docker: command not found
+root@7adff42e2d2e:/# cd ~/Desktop
+bash: cd: /root/Desktop: No such file or directory
+root@7adff42e2d2e:/# quit 
+bash: quit: command not found
+root@7adff42e2d2e:/# pwd
+/
+root@7adff42e2d2e:/# exit
+exit
+jakubkuka@Jakubs-MacBook-Pro-2 Desktop % docker restart scripttest
+scripttest
+jakubkuka@Jakubs-MacBook-Pro-2 Desktop % cd /tmp
+jakubkuka@Jakubs-MacBook-Pro-2 /tmp % micro myfile.txt
+
+1 Some extra text                                                                                                                                   
+                                                                                                                                                    
+                                                                                                                                                    
+                                                                                                                                                    
+                                                                                                                                                    
+                                                                                                                                                    
+                                                                                                                                                    
+                                                                                                                                                    
+                                                                                                                                                    
+                                                                                                                                                    
+                                                                                                                                                    
+                                                                                                                                                    
+                                                                                                                                                    
+                                                                                                                                                    
+                                                                                                                                                    
+                                                                                                                                                    
+                                                                                                                                                    
+                                                                                                                                                    
+                                                                                                                                                    
+                                                                                                                                                    
+                                                                                                                                                    
+                                                                                                                                                    
+                                                                                                                                                    
+                                                                                                                                                    
+                                                                                                                                                    
+                                                                                                                                                    
+                                                                                                                                                    
+                                                                                                                                                    
+                                                                                                                                                    
+                                                                                                                                                    
+                                                                                                                                                    
+                                                                                                                                                    
+                                                                                                                                                    
+                                                                                                                                                    
+                                                                                                                                                    
+                                                                                                                                                    
+                                                                                                                                                    
+myfile.txt + (1,16) | ft:unknown | unix | utf-8                                                                        Alt-g: bindings, Ctrl-g: help
+                                                                                                                                                    

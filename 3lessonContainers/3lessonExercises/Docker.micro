@@ -1,0 +1,80 @@
+jakubkuka@Jakubs-MacBook-Pro-2 ~ % cd Desktop
+jakubkuka@Jakubs-MacBook-Pro-2 Desktop % cd school/4semester/DOC1/5lesson 
+jakubkuka@Jakubs-MacBook-Pro-2 5lesson % micro Dockerfile
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1 FROM alpine:3.19                                                                                                                          
+2 RUN apk update && apk add cmatrix                                                                                                         
+3 CMD /bin/sh                                                                                                                               
+                                                                                                                                            
+                                                                                                                                            
+                                                                                                                                            
+                                                                                                                                            
+                                                                                                                                            
+                                                                                                                                            
+                                                                                                                                            
+                                                                                                                                            
+                                                                                                                                            
+                                                                                                                                            
+                                                                                                                                            
+                                                                                                                                            
+                                                                                                                                            
+                                                                                                                                            
+                                                                                                                                            
+                                                                                                                                            
+                                                                                                                                            
+                                                                                                                                            
+                                                                                                                                            
+                                                                                                                                            
+                                                                                                                                            
+                                                                                                                                            
+                                                                                                                                            
+                                                                                                                                            
+                                                                                                                                            
+                                                                                                                                            
+                                                                                                                                            
+                                                                                                                                            
+                                                                                                                                            
+                                                                                                                                            
+                                                                                                                                            
+                                                                                                                                            
+                                                                                                                                            
+                                                                                                                                            
+                                                                                                                                            
+Dockerfile + (3,12) | ft:dockerfile | unix | utf-8                                                             Alt-g: bindings, Ctrl-g: help
+Pasted clipboard                                                                                                                            

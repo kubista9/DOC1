@@ -1,0 +1,80 @@
+jakubkuka@Jakubs-MacBook-Pro-2 ~ % cd Desktop
+jakubkuka@Jakubs-MacBook-Pro-2 Desktop % cd school/4semester/DOC1/5lesson 
+jakubkuka@Jakubs-MacBook-Pro-2 5lesson % micro Dockerfile
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1 FROM alpine:3.19                                                                                                                          
+2 RUN apk update && apk add cmatrix                                                                                                         
+3 CMD /bin/sh                                                                                                                               
+4                                                                                                                                           
+                                                                                                                                            
+                                                                                                                                            
+                                                                                                                                            
+                                                                                                                                            
+                                                                                                                                            
+                                                                                                                                            
+                                                                                                                                            
+                                                                                                                                            
+                                                                                                                                            
+                                                                                                                                            
+                                                                                                                                            
+                                                                                                                                            
+                                                                                                                                            
+                                                                                                                                            
+Dockerfile (4,1) | ft:dockerfile | unix | utf-8                                                                Alt-g: bindings, Ctrl-g: help
+ 1 # Micro help text                                                                                                                        
+ 2                                                                                                                                          
+ 3 Micro is an easy to use, intuitive, text editor that takes advantage of the                                                              
+ 4 full capabilities of modern terminals.                                                                                                   
+ 5                                                                                                                                          
+ 6 Micro can be controlled by commands entered on the command bar, or with                                                                  
+ 7 keybindings. To open the command bar, press Ctrl-e: the `>` prompt will                                                                  
+ 8 display. From now on, when the documentation shows a command to run (such as                                                             
+ 9 `> help`), press Ctrl-e and type the command followed by enter.                                                                          
+10                                                                                                                                          
+11 For a list of the default keybindings, run `> help defaultkeys`.                                                                         
+12 For more information on keybindings, see `> help keybindings`.                                                                           
+13 To toggle a short list of important keybindings, press Alt-g.                                                                            
+14                                                                                                                                          
+15 ## Quick-start                                                                                                                           
+16                                                                                                                                          
+17 To quit, press Ctrl-q. Save by pressing Ctrl-s. Press Ctrl-e, as previously                                                              
+18 mentioned, to start typing commands. To see which commands are available, at the                                                         
+19 prompt, press tab, or view the help topic with `> help commands`.                                                                        
+Help help [ro] (1,1) | ft:markdown | unix | utf-8                                                              Alt-g: bindings, Ctrl-g: help
+Saved Dockerfile                                                                                                                            

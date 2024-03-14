@@ -1,0 +1,80 @@
+jakubkuka@Jakubs-MacBook-Pro-2 ~ % cd ~/Desktop
+jakubkuka@Jakubs-MacBook-Pro-2 Desktop % cd school
+jakubkuka@Jakubs-MacBook-Pro-2 school % cd 4semester
+jakubkuka@Jakubs-MacBook-Pro-2 4semester % cd DOC1
+jakubkuka@Jakubs-MacBook-Pro-2 DOC1 % cd 3lessonContainers
+jakubkuka@Jakubs-MacBook-Pro-2 3lessonContainers % cd scriptdemo 
+jakubkuka@Jakubs-MacBook-Pro-2 scriptdemo % cat script1_input.sh
+#!/usr/bin/sh
+
+if [ -p /dev/stdin ]; then
+	# Check to see if stdin is connected to a pipe
+	echo "Got data from a pipe"
+elif [ -f /dev/stdin ]; then
+	# Check to see if stdin is connected to a regular file
+	echo "Got data on stdin"
+elif [ $# -gt 0 ]; then
+	# Check to see if any command line arguments were given
+	echo "Got cmdline argument(s): " "${@}"
+else
+	# This script was not given any kind of data
+	read -r -p "No data given, please enter a file name: " USERFILE
+    echo "The user wrote '${USERFILE}'"	
+fi
+jakubkuka@Jakubs-MacBook-Pro-2 scriptdemo % chmod +x script1_input.sh
+jakubkuka@Jakubs-MacBook-Pro-2 scriptdemo % ./script1_input.sh 
+zsh: ./script1_input.sh: bad interpreter: /usr/bin/sh: no such file or directory
+jakubkuka@Jakubs-MacBook-Pro-2 scriptdemo % pwd
+/Users/jakubkuka/Desktop/school/4semester/DOC1/3lessonContainers/scriptdemo
+jakubkuka@Jakubs-MacBook-Pro-2 scriptdemo % script1_input.sh 
+zsh: command not found: script1_input.sh
+jakubkuka@Jakubs-MacBook-Pro-2 scriptdemo % micro script1_input.sh 
+
+
+
+
+
+
+
+
+
+ 1 #!/usr/bin/sh                                                                                                                            
+ 2                                                                                                                                          
+ 3 if [ -p /dev/stdin ]; then                                                                                                               
+ 4     # Check to see if stdin is connected to a pipe                                                                                       
+ 5     echo "Got data from a pipe"                                                                                                          
+ 6 elif [ -f /dev/stdin ]; then                                                                                                             
+ 7     # Check to see if stdin is connected to a regular file                                                                               
+ 8     echo "Got data on stdin"                                                                                                             
+ 9 elif [ $# -gt 0 ]; then                                                                                                                  
+10     # Check to see if any command line arguments were given                                                                              
+11     echo "Got cmdline argument(s): " "${@}"                                                                                              
+12 else                                                                                                                                     
+13     # This script was not given any kind of data                                                                                         
+14     read -r -p "No data given, please enter a file name: " USERFILE                                                                      
+15     echo "The user wrote '${USERFILE}'"                                                                                                  
+16     echo "The user wrote '${USERFILE}'"                                                                                                  
+17 fi                                                                                                                                       
+18                                                                                                                                          
+                                                                                                                                            
+                                                                                                                                            
+                                                                                                                                            
+                                                                                                                                            
+                                                                                                                                            
+                                                                                                                                            
+                                                                                                                                            
+                                                                                                                                            
+                                                                                                                                            
+                                                                                                                                            
+                                                                                                                                            
+                                                                                                                                            
+                                                                                                                                            
+                                                                                                                                            
+                                                                                                                                            
+                                                                                                                                            
+                                                                                                                                            
+                                                                                                                                            
+                                                                                                                                            
+                                                                                                                                            
+script1_input.sh + (16,41) | ft:shell | unix | utf-8                                                           Alt-g: bindings, Ctrl-g: help
+Duplicated line                                                                                                                             
