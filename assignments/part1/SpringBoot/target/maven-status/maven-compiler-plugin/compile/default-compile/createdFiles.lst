@@ -1,2 +1,2 @@
-controllers/GreetingController.class
-start/Main.class
+com/example/myapp/controllers/GreetingController.class
+com/example/myapp/Main.class
